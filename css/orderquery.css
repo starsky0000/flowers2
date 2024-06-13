@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(244, 244, 244);
+}
+
+.query {
+    width: 1200px;
+    /* height: 700px; */
+    margin: 60px auto;
+    background-color: #fff;
+}
+
+.rowone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+.rowone .logo {
+    width: 260px;
+    height: 100px;
+}
+
+.rowone .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.rowone h2 {
+    font-size: 20px;
+}
+
+.rowtwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.information {
+    height: 400px;
+    width: 700px;
+    border: 1px solid rgb(223, 223, 223);
+    margin: 15px 25px;
+}
+
+.information .btn {
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(252, 174, 16);
+    color: #fff;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.pic {
+    height: 400px;
+    margin: 15px 25px;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.infor p {
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    padding: 10px 10px;
+    color: #666;
+}
+
+.infor p input {
+    height: 30px;
+    width: 450px;
+    border-radius: 5px;
+}
+
+.information .btn2 {
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgb(247, 17, 29);
+    color: #fff;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+}

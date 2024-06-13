@@ -1,0 +1,24 @@
+/* 导航条 */
+/* logo */
+.navbar-brand {
+    padding: 5px 15px;
+}
+
+.navbar-nav>li>a::before {
+    padding-right: 5px;
+}
+
+.collapsed {
+    text-decoration: none;
+}
+
+/* 分页 */
+.row .pagination {
+    margin-left: 30%;
+}
+
+/* user */
+.dropdown-toggle .userimg {
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/img8/花店-百合.png">
+    <title>确认订单</title>
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="font_3563388_648wiy8wjtl/iconfont.css">
+    <!-- 引入样式表 -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/onlineshop.css">
+</head>
+
+<body>
+    <!-- 主体内容，手指滑动查看 -->
+    <div class="main">
+
+        <!-- 用户信息 -->
+        <div class="pannel user_msg">
+            <div class="location orange">
+                <i class="iconfont icon-location"></i>
+            </div>
+            <div class="user_mesg">
+                <div class="user">
+                    <h5 class="text_f">星月</h5>
+                    <p class="text_f">17736317021</p>
+                </div>
+                <div class="address text_f">北京市 门头沟区 中关村科技园 石龙创新大厦#334</div>
+            </div>
+            <div class="more">
+                <i class="iconfont icon-more"></i>
+            </div>
+        </div>
+
+        <div class="pannel product_msg">
+            <div class="line1">
+                <img class='img' src="images/login/small.jpg" alt="">
+                <span>
+                    <a class='text_f' href="">蓝色星辰：11枝碎冰蓝玫瑰，满天星适量搭配</a>
+                </span>
+                <i class="iconfont icon-x"></i>
+                <p>1</p>
+            </div>
+
+            <div class="line2">
+                <div class="new text_f">到手价:
+                    <span class="orange_text">¥</span>
+                    <i class="orange_text">58.00</i>
+                </div>
+                <div class="old text_f">原价:
+                    <span>¥69.00</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pannel company text_f">
+            <i>快递公司</i>
+            <i class="item">顺丰快递</i>
+        </div>
+
+        <div class="send pannel text_f">
+            <i>配送服务</i>
+            <div class="middle">
+                <div class="top">快递 免邮</div>
+                <div class="bottom">店铺预售,付款后七天内发货</div>
+            </div>
+            <p class="iconfont icon-more"></p>
+        </div>
+
+
+        <div class="or_more pannel text_f">
+            <i>订单备注</i>
+            <i class="item">无备注</i>
+            <p class="iconfont icon-more"></p>
+        </div>
+
+        <div class="pay_way pannel text_f">
+            <i>支付方式</i>
+            <form action="">
+                <br>
+                <input type="radio" name="radio" value="微信支付" />微信支付
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" value="微信支付" />支付宝
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="radio" value="微信支付" />银行卡
+            </form>
+        </div>
+
+    </div>
+
+
+    <!-- 底部支付，固定定位 -->
+    <div class="pay">
+        <div class="left text_f">
+            合计:
+            <!-- 把价格放在一个标签里，可以方便后面改变
+            内容和样式-->
+            <!-- span调用公共样式 (class)-->
+            <span class="orange_text text_f">¥<i>58.00</i></span>
+        </div>
+        <div class="right">
+            <a class="orange text_f">去支付</a>
+        </div>
+    </div>
+</body>
+
+</html>

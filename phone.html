@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星辰之恋</title>
+    <link rel="shortcut icon" href="images/img8/花店-百合.png">
+    <link rel="stylesheet" href="css/phone.css">
+    <style>
+        .magnifier {
+            height: 450px;
+            background-color: #fff;
+        }
+
+        .magnifier .box {
+            position: relative;
+            width: 450px;
+            height: 450px;
+            border: 1px solid #eee;
+        }
+
+        .magnifier .box img {
+            width: 100%;
+        }
+
+        .magnifier .box .mask {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(220, 222, 159);
+            opacity: .5;
+            border: 1px solid #ccc;
+            cursor: move;
+        }
+
+        .magnifier .box .big {
+            display: none;
+            position: absolute;
+            left: 460px;
+            top: 0;
+            width: 540px;
+            height: 540px;
+            z-index: 999;
+            border: 1px solid #eee;
+            overflow: hidden;
+        }
+
+        .magnifier .box .big img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 800px;
+        }
+    </style>
+    <script src="js/phone.js"></script>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div class="top">
+        <div class="w topheader">
+            <!-- 顶部左侧导航栏开始-->
+            <div class="topnav">
+                <ul>
+                    <li><a href="index.html" target="_blank">星瀚官网</a></li>
+                    <li><a href="index.html">星瀚花城</a></li>
+                    <li><a href="https://home.miui.com/" target="_blank">XIHI</a></li>
+                    <li><a href="https://iot.mi.com/" target="_blank">IoT</a></li>
+                    <li><a href="https://i.mi.com/" target="_blank">云服务</a></li>
+                    <li><a href="https://airstar.com/" target="_blank">星瀚数科</a></li>
+                    <li><a href="https://www.xiaomiyoupin.com/" target="_blank">有品</a></li>
+                    <li><a href="https://xiaoai.mi.com/" target="_blank">星瀚开放平台</a></li>
+                    <li><a href="https://qiye.mi.com/" target="_blank">企业团购</a></li>
+                    <li><a href="https://www.mi.com/" target="_blank">资质证照</a></li>
+                    <li><a href="https://www.mi.com/" target="_blank">协议规则</a></li>
+                    <li><a href="https://www.mi.com/" target="_blank">下载app</a></li>
+                    <li><a href="javascript:;">Selection&nbsp;Location</a></li>
+                </ul>
+            </div>
+            <!-- 顶部左侧导航栏结束 -->
+            <!-- 顶部右侧导航栏开始 -->
+            <div class="topnav2">
+                <ul>
+                    <li><a href="userlogin.html">登录</a></li>
+                    <li><a href="userlogin.html">注册</a></li>
+                    <li><a href="managerlogin.html">管理入口</a></li>
+                </ul>
+            </div>
+            <!-- 顶部右侧导航栏结束 -->
+            <!-- 购物车 -->
+            <div class="shop">
+                <ul>
+                    <li>
+                        <a href="shopping-cart.html">
+                            <img src="images/img2/购物车空.png" alt="">
+                            购物车&nbsp;(0)
+                        </a>
+                        <ul>
+                            <li>购物车中还没有商品，赶紧选购吧！</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- 购物车结束 -->
+        </div>
+    </div>
+    <!-- 头部 -->
+    <div class="headerfather">
+        <div class="header w">
+            <!-- 小米logo -->
+            <div class="logo">
+                <img src="images/img8/logo.png" alt="">
+            </div>
+            <!-- 头部导航栏 -->
+            <div class="headernav">
+                <ul>
+                    <li>
+                        <a href="#">星瀚鲜花</a>
+                        <ul>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body07.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body08.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body14.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body16.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body18.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="lastchild">
+                                <a href="phone.html">
+                                    <img src="images/img8/body19.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">花束</a>
+                        <ul>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body20.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body22.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body07.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body08.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body14.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="lastchild">
+                                <a href="phone.html">
+                                    <img src="images/img8/body16.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">礼盒</a>
+                        <ul>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body14.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body16.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body18.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body19.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body07.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="lastchild">
+                                <a href="phone.html">
+                                    <img src="images/img8/body08.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">蛋糕</a>
+                        <ul>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body14.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body16.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body18.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body19.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body07.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="lastchild">
+                                <a href="phone.html">
+                                    <img src="images/img8/body08.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">花篮</a>
+                        <ul>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body14.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body16.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body18.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body19.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body07.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="lastchild">
+                                <a href="phone.html">
+                                    <img src="images/img8/body08.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">绿植</a>
+                        <ul>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body14.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body16.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body18.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body19.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body07.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="lastchild">
+                                <a href="phone.html">
+                                    <img src="images/img8/body08.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">周花</a>
+                        <ul>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body14.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body16.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body18.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body19.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="phone.html">
+                                    <img src="images/img8/body07.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="lastchild">
+                                <a href="phone.html">
+                                    <img src="images/img8/body08.jpg" alt="">
+                                    <span>
+                                        Xiaomi 13 Ultra 限量定制色
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.mi.com/" target="_blank">服务中心</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">社区</a>
+                    </li>
+            </div>
+            <!-- 头部右侧搜索框 -->
+            <div class="search">
+                <!-- <input type="text" value="输入关键字">
+            <button>
+            </button> -->
+                <div class="icon"></div>
+                <div class="textInput">
+                    <input type="text" placeholder="search something here...">
+                    <input type="submit" value="go" id="go">
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <script>
+                let $ = tName => {
+                    return document.querySelector(tName);
+                }
+                let oSearch = $('.search');
+                let oIcon = $('.icon');
+                let oClear = $('.clear');
+                let oText = $('input[type="text"]');
+                // 绑定事件
+                // 收缩
+                oIcon.addEventListener('mouseenter', () => {
+                    oSearch.classList.toggle('changeWidth');
+                })
+                // 清空内容
+                oClear.addEventListener('click', () => {
+                    oText.value = '';
+                })
+            </script>
+        </div>
+    </div>
+    <!-- 首页>全部结果 -->
+    <div class="title1 w">
+        <ul>
+            <li><a href="shop.html">首页&nbsp;>&nbsp;全部结果</a></li>
+        </ul>
+    </div>
+    <!-- 手机性能 -->
+    <div class="bigbox">
+        <div class="cpu w">
+            <ul>
+                <li>分类：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">全部</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">爱情鲜花</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">生日鲜花</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">友情鲜花</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">道歉鲜花</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">商务鲜花</a>
+                </li>
+                <li>花材：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">玫瑰</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">百合</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">康乃馨</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">向日葵</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">满天星</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">郁金香</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">菊花</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">其他</a>
+                </li>
+                <li>类别：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">花束</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">礼盒</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">蛋糕</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">花篮</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">绿植</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">周花</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">手提花篮</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">桌花</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">其他</a></li>
+                <li>花名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">蓝色星辰</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">蓝色梦想</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">蓝色记忆</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">爱的诺言</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">此情不渝</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">告白气球</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">年年不忘</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">永恒之心</a></li>
+                <li>枝数：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">11枝</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">19枝</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">21枝</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">33枝</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">52枝</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">66枝</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">99枝</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">其他</a></li>
+                <li id="bor">
+                    花语：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="#">紫罗兰：感情的监禁，机敏，对我而言你永远那么美。</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 综合 新品 销量 价格 -->
+    <div class="secondbigbox w">
+        <ul>
+            <li><a href="#">综合</a></li>
+            <li><a href="#">心品</a></li>
+            <li><a href="#">销量</a></li>
+            <li><a href="#">价格</a></li>
+        </ul>
+    </div>
+
+
+    <!-- 手机放大镜展示效果 -->
+    <div class="love w" style="margin-top: 30px;">
+        <hr class="left">
+        永恒之心
+        <hr class="right">
+    </div>
+    <div class="magnifier w">
+
+        <div class="box">
+            <img src="images/login/small.jpg" alt="">
+            <div class="mask"></div>
+            <div class="big">
+                <img src="images/login/small.jpg" alt="" class="bigimg">
+            </div>
+        </div>
+
+        <!-- 详细信息价格加入购物车 -->
+        <style>
+            .box2 {
+                display: flex;
+                margin-right: 20px;
+
+            }
+
+            .box2_1 {
+                width: 400px;
+                height: 400px;
+            }
+
+            .box2_2 {
+                line-height: 30px;
+                /* margin-left: 100px; */
+            }
+
+            .span1 {
+                /* color: #1890FF; */
+                color: #666;
+                font-size: 12px;
+            }
+
+            .span2 {
+                font-size: 12px;
+
+            }
+
+            .box2_3 {
+
+                padding: 22px 40px;
+                background-color: #F7F5F1;
+                width: 600px;
+                margin: 10px 0;
+            }
+
+            .box2_4 {
+                margin-left: 40px;
+            }
+
+            .sel1 {
+                margin: 10px;
+                width: 200px;
+                height: 30px;
+                border: 1px solid #ccc;
+            }
+
+            .box2_5 {
+                margin-left: 40px;
+                display: flex;
+            }
+
+            .countreduce,
+            .countadd {
+                width: 20px;
+                font-size: 20px;
+                background-color: #ccc;
+                text-align: center;
+            }
+
+            .countreduce:hover,
+            .countadd:hover {
+                cursor: pointer;
+                background: #666;
+            }
+
+            .box2_6 {
+                margin-left: 40px;
+                margin-top: 20px;
+            }
+
+            .btn2,
+            .btn3 {
+                height: 42px;
+                width: 159px;
+                margin: 0 10px;
+                font-size: 18px
+            }
+
+            .btn2:hover,
+            .btn3:hover {
+                cursor: pointer;
+            }
+
+            .btn2 {
+                pad: 10px;
+                background: #fff;
+                border: 1px solid #C62E2D;
+                color: #C62E2D;
+            }
+
+            .btn3 {
+                pad: 10px;
+                background: #C62E2D;
+                border: 1px solid #C62E2D;
+                color: #fff;
+            }
+        </style>
+        <div class="box2">
+            <div class="box2_1"><img src="" alt=""></div>
+            <div class="box2_2">
+                <p
+                    style="font-family: 'Microsoft YaHei';color: rgb(51, 51, 51); margin-top: 15px;font-size: 22px;font-weight: 600;">
+                    蓝色星辰</p>
+                <p>
+                    <span class="span1">材料 </span>&nbsp;<span class="span2">: </span>&nbsp<span
+                        class="span1">11枝碎冰蓝玫瑰，满天星适量搭配
+                    </span>
+                    <br>
+                    <span class="span1">包装 </span>&nbsp;<span class="span2">: </span>&nbsp<span class="span1">黑色韩式包装
+                    </span>
+                    <br>
+                    <span class="span1">附送 </span>&nbsp;<span class="span2">: </span>&nbsp<span
+                        class="span1">下单填写留言，免费赠送贺卡
+                    </span>
+                </p>
+                <div class="box2_3">
+                    <span style="font-size: 12px; color: #666;">活动价</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span style="color: #C62E2D; font-size: 18px;font-weight: 600;">￥55.50</span>
+                    &nbsp;
+                    <span style="font-size: 12px; color: #666;text-decoration: line-through;">￥108.00</span>
+                </div>
+                <div class="box2_4">
+                    <span style="font-size: 14px; color: #666;">配送至</span>
+                    <select name="" id="" class="sel1">
+                        <option value="">河北省 保定市 莲池区</option>
+                        <option value="">河北省 保定市 涿州市</option>
+                        <option value="">河北省 保定市 定州市</option>
+                        <option value="">河北省 保定市 唐县</option>
+                        <option value="">河北省 保定市 雄县</option>
+                    </select>
+                    <span style="font-size: 12px; color: #666; margin-left: 10px;">该地区有货</span>
+                </div>
+                <div class="box2_5">
+                    <span style="font-size: 12px; color: #999; margin: 0 20px;">数量</span>
+                    <div style="display: flex;">
+                        <div class="countreduce" id="des">-</div>
+                        <input type="text" style="width: 40px;text-align: center;" value="1" id="count">
+                        <div class="countadd" id="add">+</div>
+                    </div>
+                </div>
+                <div class="box2_6">
+                    <button class="btn2" onclick="sendcart()">加入购物车</button>
+                    <button class="btn3" onclick="sendcart()">立即购买</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            var des = document.getElementById('des');
+            var count = document.getElementById('count');
+            des.onclick = function () {
+                if (count.value > 1) {
+                    count.value--;
+                }
+            }
+            add.onclick = function () {
+                count.value++;
+            }
+            function sendcart() {
+                alert("加入购物车成功！");
+            }
+
+        </script>
+        <!-- 详细信息价格加入购物车 -->
+    </div>
+
+
+    <!-- 手机展品 -->
+    <div class="love w" style="margin-top: 30px;">
+        <hr class="left">
+        鲜花展示
+        <hr class="right">
+    </div>
+    <div class="thirdbigbox w">
+        <div class="box">
+            <img src="images/img8/body14.jpg" alt="">
+            <p class="review">Xiaomi Civi 1S</p>
+            <div class="appraise">原生美肌人像｜奇迹阳光动人新色｜骁龙7</div>
+            <div class="info">2299元起</div>
+        </div>
+        <div class="box">
+            <img src="images/img8/body16.jpg" alt="">
+            <p class="review">Xiaomi Civi 1S</p>
+            <div class="appraise">原生美肌人像｜奇迹阳光动人新色｜骁龙7</div>
+            <div class="info">2299元起</div>
+        </div>
+        <div class="box">
+            <img src="images/img8/body20.jpg" alt="">
+            <p class="review">Xiaomi Civi 1S</p>
+            <div class="appraise">原生美肌人像｜奇迹阳光动人新色｜骁龙7</div>
+            <div class="info">2299元起</div>
+        </div>
+    </div>
+    <!-- 猜你喜欢 -->
+    <div class="love w">
+        <hr class="left">
+        猜你喜欢
+        <hr class="right">
+    </div>
+    <div class="thirdbigbox w">
+        <div class="box">
+            <img src="images/img8/body07.jpg" alt="">
+            <p class="review">Xiaomi Civi 1S</p>
+            <div class="appraise">原生美肌人像｜奇迹阳光动人新色｜骁龙7</div>
+            <div class="info">2299元起</div>
+        </div>
+        <div class="box">
+            <img src="images/img8/body05.jpg" alt="">
+            <p class="review">Xiaomi Civi 1S</p>
+            <div class="appraise">原生美肌人像｜奇迹阳光动人新色｜骁龙7</div>
+            <div class="info">2299元起</div>
+        </div>
+        <div class="box">
+            <img src="images/img8/body12.jpg" alt="">
+            <p class="review">Xiaomi Civi 1S</p>
+            <div class="appraise">原生美肌人像｜奇迹阳光动人新色｜骁龙7</div>
+            <div class="info">2299元起</div>
+        </div>
+    </div>
+    <!-- 底部 -->
+
+    <!-- /尾部 -->
+    <!-- <div class="bottom">
+        <img src="images/img2/bottom.jpg" alt="">
+    </div> -->
+    <footer>
+        <div class="bottom">
+            <div class="footer-service w">
+                <ul>
+                    <li><a href="javascript:;">预约维修服务</a></li>
+                    <li><a href="javascript:;">7天无理由退货</a></li>
+                    <li><a href="javascript:;">15天免费换货</a></li>
+                    <li><a href="javascript:;">满69元包邮</a></li>
+                    <li><a href="javascript:;">1100余家售后网点</a></li>
+                </ul>
+            </div>
+            <div class="footer-links w">
+                <dl>
+                    <dt>选购指南</dt>
+                    <dd><a href="javascript:;">鲜花</a></dd>
+                    <dd><a href="javascript:;">花束</a></dd>
+                    <dd><a href="javascript:;">绿植</a></dd>
+                    <dd><a href="javascript:;">礼盒</a></dd>
+                    <dd><a href="javascript:;">仙女</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务中心</dt>
+                    <dd><a href="javascript:;">申请售后</a></dd>
+                    <dd><a href="javascript:;">售后政策</a></dd>
+                    <dd><a href="javascript:;">订单查询</a></dd>
+                    <dd><a href="javascript:;">保障服务</a></dd>
+                    <dd><a href="javascript:;">防伪查询</a></dd>
+                </dl>
+                <dl>
+                    <dt>线下门店</dt>
+                    <dd><a href="javascript:;">服务网点</a></dd>
+                    <dd><a href="javascript:;">授权体验店</a></dd>
+                    <dd><a href="javascript:;">专区</a></dd>
+                    <dd><a href="javascript:;">河北分店</a></dd>
+                    <dd><a href="javascript:;">北京总部</a></dd>
+                </dl>
+                <dl>
+                    <dt>关于星瀚</dt>
+                    <dd><a href="javascript:;">配送说明</a></dd>
+                    <dd><a href="javascript:;">服务条款</a></dd>
+                    <dd><a href="javascript:;">订花流程</a></dd>
+                    <dd><a href="javascript:;">支付方式</a></dd>
+                    <dd><a href="javascript:;">隐私条款</a></dd>
+                </dl>
+                <dl>
+                    <dt>关注我们</dt>
+                    <dd><a href="javascript:;">新浪微博</a></dd>
+                    <dd><a href="javascript:;">官方微信</a></dd>
+                    <dd><a href="javascript:;">联系我们</a></dd>
+                    <dd><a href="javascript:;">公益基金会</a></dd>
+                    <dd><a href="javascript:;">全国热线：400-060</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="footer-bottom w">
+            <p>
+            <div id="one">Copyright©2023&nbsp;河北星瀚科技有限公司&nbsp;</div>
+            <div id="two"><a href="javascript:;">冀ICP备20016463号-2</a></div>
+            </p>
+        </div>
+    </footer>
+    <!-- 页面固定定位 -->
+    <div class="house">
+        <div class="ad1 ad">
+            <div class="img">
+                <img src="images/img7/serve1.png" alt="" class="before">
+                <img src="images/img7/serve01.png" alt="" style="display: none;" class="after">
+            </div>
+            <p class="f">手机app</p>
+        </div>
+        <div class="ad2 ad">
+            <div class="img">
+                <img src="images/img7/serve2.png" alt="" class="before">
+                <img src="images/img7/serve02.png" alt="" style="display: none;" class="after">
+            </div>
+            <p class="f">个人中心</p>
+        </div>
+        <div class="ad3 ad">
+            <div class="img">
+                <img src="images/img7/serve3.png" alt="" class="before">
+                <img src="images/img7/serve03.png" alt="" style="display: none;" class="after">
+            </div>
+            <p class="f">售后服务</p>
+        </div>
+        <div class="ad4 ad">
+            <div class="img">
+                <img src="images/img7/serve4.png" alt="" class="before">
+                <img src="images/img7/serve04.png" alt="" style="display: none;" class="after">
+            </div>
+            <p class="f">人工客服</p>
+        </div>
+        <div class="ad5 ad">
+            <div class="img">
+                <img src="images/img7/serve5.png" alt="" class="before">
+                <img src="images/img7/serve05.png" alt="" style="display: none;" class="after">
+            </div>
+            <p class="f">购物车</p>
+        </div>
+        <div class="ad6 ad goBack" style="display: none;">
+            <div class="img">
+                <img src="images/img7/totop.png" alt="" class="before">
+                <img src="images/img7/totop_hover.png" alt="" style="display: none;" class="after">
+            </div>
+            <p class="f">返回顶部</p>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            // 防止选中文字
+            var house = document.querySelector('.house');
+            house.addEventListener('selectstart', function (e) {
+                e.preventDefault();
+            })
+            var ads = document.querySelector('.house').querySelectorAll('.ad');
+            var afters = document.querySelector('.house').querySelectorAll('.after');
+            var befores = document.querySelector('.house').querySelectorAll('.before');
+            for (var i = 0; i < ads.length; i++) {
+                ads[i].setAttribute('index', i);
+                ads[i].addEventListener('mouseenter', function () {
+                    var index = this.getAttribute('index');
+                    afters[index].style.display = 'flex';
+                    befores[index].style.display = 'none';
+                })
+                ads[i].addEventListener('mouseleave', function () {
+                    var index = this.getAttribute('index');
+                    afters[index].style.display = 'none';
+                    befores[index].style.display = 'flex';
+                })
+            }
+            // 返回顶部
+            var goBack = document.querySelector('.goBack');
+            var main = document.querySelector('.main');
+            var mainTop = main.offsetTop;
+            document.addEventListener('scroll', function () {
+                if (window.pageYOffset >= mainTop) {
+                    goBack.style.display = 'flex';
+                } else {
+                    goBack.style.display = 'none';
+                }
+            })
+            // 当我们点击了返回顶部模块，就让窗口滚动到页面最上方
+            goBack.addEventListener('click', function () {
+                // window.scroll(0, 0);
+                animate(window, 0);
+            })
+
+
+            // 动画
+            function animate(obj, target, callback) {
+                clearInterval(obj.timer);
+                obj.timer = setInterval(function () {
+                    //步长=（目标位置-当前位置）/10
+                    var step = (target - window.pageYOffset) / 10;
+                    step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                    if (window.pageYOffset == target) {
+                        clearInterval(obj.timer);
+                        // if (callback) {
+                        //     callback();
+                        // }
+                        callback && callback();
+                    }
+                    //当前位置+步长
+                    // obj.style.left = window.pageYOffset + step + 'px';
+                    window.scroll(0, window.pageYOffset + step);
+                }, 15);
+            }
+        })
+    </script>
+</body>
+
+</html>

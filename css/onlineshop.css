@@ -1,0 +1,278 @@
+.body {
+    background-color: #fff7f8;
+}
+
+/* 公共样式 */
+.orange {
+    background-image: linear-gradient(90deg,
+            #f06312 5%,
+            #e7750b 100%);
+}
+
+.orange_text {
+    color: #f06312;
+}
+
+.pannel {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    border: #f8f4f4 2px solid;
+    width: 100%;
+}
+
+.text_f {
+    font-family: PingFangSC-Regular;
+}
+
+/* 主体内容 */
+.main {
+    /* 上 左右 下，下的数值至少要跟下面pay的高度一样大，
+    内容才不会被覆盖掉 */
+    padding: 12px 11px 80px;
+}
+
+/* 用户信息 */
+.user_msg {
+    padding: 15px 0 15px 11px;
+    display: flex;
+    /* 横着排 */
+    flex-direction: row;
+}
+
+.user_msg .location {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+
+.user_msg .user_mesg .user {
+    display: flex;
+    flex-direction: row;
+}
+
+.user_msg .user_mesg .user h5 {
+    width: 55px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.user_msg .user_mesg .address {
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: 800;
+}
+
+.user_msg .more i {
+    color: #8a8a8a;
+}
+
+/* 科普：
+ 
+    flex:1实际代表的是三个属性的简写
+    flex-grow是用来增大盒子的，比如，当父盒子的宽度大于子盒子的宽度，父盒子的剩余空间可以利用
+    flex-grow来设置子盒子增大的占比
+    flex-shrink用来设置子盒子超过父盒子的宽度后，超出部分进行缩小的取值比例
+    flex-basis是用来设置盒子的基准宽度，并且basis和width同时存在basis会把width干掉
+ 
+所以flex：1；的逻辑就是用flex-basis把width干掉，然后再用flex-grow和flex-shrink增大的增大缩小的缩小，
+达成最终的效果。 */
+.user_msg .user_mesg {
+    flex: 1;
+}
+
+.user_msg .more {
+    width: 44px;
+    height: 44px;
+    /* background-color:pink; */
+    text-align: center;
+}
+
+.product_msg {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+.product_msg .line1 span {
+    height: 20px;
+    width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.product_msg .line1 p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.product_msg .line1 span a {
+    font-size: 15px;
+    color: #8a8a8a;
+}
+
+/* 同时应用： text-overflow:ellipsis; 
+white-space:nowrap; 
+overflow:hidden; 
+才能实现所想要得到的溢出文本显示省略号效果： */
+.product_msg .line1 {
+    display: flex;
+    margin-right: 5px;
+    flex-direction: row;
+}
+
+.product_msg .img {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin: 10px 40px 10px 10px;
+    box-shadow: 1px;
+}
+
+.product_msg .line2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+.product_msg .line2 .new i {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* 快递公司 */
+.company {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 15px;
+}
+
+.company i {
+    margin: 15px;
+}
+
+.company .item {
+    color: #8a8a8a;
+}
+
+/* 配送服务 */
+.send {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.send i {
+    margin-left: 15px;
+}
+
+.send .middle {
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.send p {
+    color: #8a8a8a;
+    margin: 5px;
+}
+
+/* 订单备注 */
+.or_more {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 15px;
+    align-items: center;
+}
+
+.or_more i {
+    margin-left: 15px;
+}
+
+.or_more .item {
+    margin-left: 180px;
+    color: #8a8a8a;
+}
+
+.or_more p {
+    margin-right: 15px;
+    color: #8a8a8a;
+}
+
+/* 支付方式 */
+.pay_way {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pay_way form {
+    margin-right: 50px;
+}
+
+.pay_way i {
+    margin-left: 15px;
+}
+
+/* 底部内容 */
+.pay {
+    /* 虽然默认宽度是100%，但是不写，定位的时候盒子会被压缩 */
+    width: 100%;
+    height: 80px;
+
+    background-color: #fff;
+
+    border: 1px solid #ededed;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    padding: 0 11px;
+
+    /* 让flex子元素中间产生间距 */
+    justify-content: space-between;
+    /* 垂直位置上居中 */
+    align-items: center;
+
+    z-index: 1;
+}
+
+.pay .left {
+    font-size: 12px;
+}
+
+.pay .left i {
+    font-size: 20px;
+}
+
+.pay .right a {
+    width: 90px;
+    height: 35px;
+
+    display: block;
+
+    border-radius: 3px;
+
+    font-size: 13px;
+    text-align: center;
+
+    line-height: 35px;
+
+}
